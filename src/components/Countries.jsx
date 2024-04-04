@@ -54,10 +54,10 @@ const Countries = () => {
       </div>
 
       {/* List of countries */}
-      <div id='countries' className='flex flex-wrap w-full justify-between md:gap-1'>
+      <div id='countries' className='flex flex-wrap justify-between w-full md:gap-1'>
         {listOfCountries.length > 0 && listOfCountries.map((country, index) => {
           return (
-            <div key={index} className='w-5/12 md:w-1/5 mb-5'>
+            <div key={index} className='w-5/12 mb-5 md:w-1/5'>
               <img src={country.flags.svg} alt={country.flags.alt} />
               <p>{country.name.common}</p>
               <p>{country.capital}</p>
@@ -89,11 +89,11 @@ const Countries = () => {
 
       {/* Pagination  */}
       <div id='pagination'>
-        <button type="button">1</button>
-        <button type="button">2</button>
-        <button type="button">3</button>
-        <button type="button">4</button>
-        <button type="button">5</button>
+        <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">1</button>
+        <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">2</button>
+        <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">3</button>
+        <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">4</button>
+        <button type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">5</button>
       </div>
     </CountriesSection>
   )

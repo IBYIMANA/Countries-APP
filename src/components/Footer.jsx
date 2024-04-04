@@ -5,11 +5,11 @@ import { SectionHolder } from '../styled-components/GeneralComponents'
 
 const Footer = () => {
   return (
-    <footer className='py-5 w-full flex bg-slate-200 items-center justify-center'>
+    <footer className='flex items-center justify-center w-full py-5 bg-slate-200'>
       <SectionHolder className='gap-4'>
         <MobileLogo />
         <DesktopLogo />
-        <p className='text-gray-500'>Copyright &copy; {new Date().getFullYear()}. All rights reserved - SheCanCODE Front-end Cohort #10</p>
+        <p className='text-gray-500'>Copyright &copy; {new Date().getFullYear()}. All rights reserved </p>
       </SectionHolder>
     </footer>
   )
