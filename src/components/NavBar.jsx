@@ -6,13 +6,14 @@ import { CiMenuFries } from "react-icons/ci";
 
 const NavBar = () => {
   return (
-    <div className='flex w-full justify-between py-10 '>
+    <div className='flex justify-between w-full py-10 '>
       <Link to='/'>
         <DesktopLogo />
         <MobileLogo />
       </Link>
       <NavLink to={'/'} className={'block md:hidden'}><CiMenuFries /></NavLink>
       <NavLink to={'/'} className={'hidden md:block'}>Countries</NavLink>
+      <NavLink to={'/'} className={'hidden md:block'}>Contact</NavLink>
     </div>
   )
 }
